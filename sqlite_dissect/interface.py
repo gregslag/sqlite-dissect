@@ -50,7 +50,7 @@ export_version_history_to_sqlite(export_directory, sqlite_file_name, version_his
 def create_database(
     file_identifier, store_in_memory=False, strict_format_checking=True
 ):
-    return Database(file_identifier, store_in_memory, strict_format_checking)
+    return Database(file_identifier, store_in_memory, strict_format_checking=strict_format_checking)
 
 
 def create_write_ahead_log(file_identifier):
